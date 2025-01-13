@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多蛇寻食游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-area">
+            <div class="game-title">多蛇寻食大作战</div>
+            <div class="game-instructions">
+                使用方向键控制绿色蛇<br>
+                蓝色蛇会自动寻找食物<br>
+                吃到食物得分，撞墙或撞到其他蛇会死亡
+            </div>
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div class="control-panel">
+            <div class="controls">
+                <button id="startBtn">开始游戏</button>
+                <button id="pauseBtn">暂停游戏</button>
+                <button id="restartBtn">重新开始</button>
+                <button id="autoBtn">托管模式</button>
+            </div>
+            <div class="scoreboard">
+                <h2>得分榜</h2>
+                <ul id="scoreList">
+                    <li>玩家: <span>0</span></li>
+                    <li>AI 1: <span>0</span></li>
+                    <li>AI 2: <span>0</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
